@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes>
+    <entry>
+      <string>Width</string>
+      <int>7</int>
+    </entry>
+  </attributes>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Opcode</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Execute</string>
+        </entry>
+      </elementAttributes>
+      <pos x="380" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Load</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Store</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Add</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Sub</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Inc</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Dec</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Bra</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Beq</string>
+        </entry>
+      </elementAttributes>
+      <pos x="800" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>OpcodeDecoder-Inner.dig</elementName>
+      <elementAttributes/>
+      <pos x="520" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Test Bench OpcodeDecoder-Inner</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString># Test Vectors for opcode decoder
+# Inputs: Opcode (3 bits), Execute
+# Outputs: Load, Store, Add, Sub, Inc, Dec, Bra, Beq
+# When Execute = 0, all outputs equal 0
+# When execute = 1, decode Opcode
+Opcode Execute Load Store Add Sub Inc Dec Bra Beq
+# Load Instruction
+0      0       0    0     0   0   0   0   0   0
+0      1       1    0     0   0   0   0   0   0
+# Store Instruction
+1      0       0    0     0   0   0   0   0   0
+1      1       0    1     0   0   0   0   0   0
+# Add Instruction
+2      0       0    0     0   0   0   0   0   0
+2      1       0    0     1   0   0   0   0   0
+# Subtract Instruction
+3      0       0    0     0   0   0   0   0   0
+3      1       0    0     0   1   0   0   0   0
+# Increment Instruction
+4      0       0    0     0   0   0   0   0   0
+4      1       0    0     0   0   1   0   0   0
+# Decrement Instruction
+5      0       0    0     0   0   0   0   0   0
+5      1       0    0     0   0   0   1   0   0
+# Branch Instruction
+6      0       0    0     0   0   0   0   0   0
+6      1       0    0     0   0   0   0   1   0
+# Branch if equal to zero Instruction
+7      0       0    0     0   0   0   0   0   0
+7      1       0    0     0   0   0   0   0   1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="320" y="340"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="420" y="160"/>
+      <p2 x="520" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="160"/>
+      <p2 x="720" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="160"/>
+      <p2 x="800" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="80"/>
+      <p2 x="800" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="240"/>
+      <p2 x="800" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="240"/>
+      <p2 x="760" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="320"/>
+      <p2 x="800" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="180"/>
+      <p2 x="740" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="260"/>
+      <p2 x="740" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="200"/>
+      <p2 x="420" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="200"/>
+      <p2 x="800" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="120"/>
+      <p2 x="800" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="280"/>
+      <p2 x="800" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="280"/>
+      <p2 x="720" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="360"/>
+      <p2 x="800" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="380" y="140"/>
+      <p2 x="520" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="140"/>
+      <p2 x="700" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="220"/>
+      <p2 x="780" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="120"/>
+      <p2 x="720" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="280"/>
+      <p2 x="720" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="420" y="160"/>
+      <p2 x="420" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="160"/>
+      <p2 x="740" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="260"/>
+      <p2 x="740" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="240"/>
+      <p2 x="760" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="80"/>
+      <p2 x="700" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="220"/>
+      <p2 x="780" y="240"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

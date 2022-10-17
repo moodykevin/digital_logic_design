@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>1</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Opcode</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Clock</string>
+        </entry>
+      </elementAttributes>
+      <pos x="360" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T0</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T4</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T7</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Execute</string>
+        </entry>
+      </elementAttributes>
+      <pos x="840" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  0     0     1  0  0  0  0  0  0  0    0
+  1     0     0  1  0  0  0  0  0  0    0
+  0     0     0  1  0  0  0  0  0  0    0
+  1     0     0  0  1  0  0  0  0  0    0
+  0     0     0  0  1  0  0  0  0  0    0
+  1     0     0  0  0  1  0  0  0  0    0
+  0     0     0  0  0  1  0  0  0  0    0
+  1     0     0  0  0  0  1  0  0  0    1
+  0     0     0  0  0  0  1  0  0  0    1
+  1     0     0  0  0  0  0  1  0  0    1
+  0     0     0  0  0  0  0  1  0  0    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     1     1  0  0  0  0  0  0  0    0
+  0     1     1  0  0  0  0  0  0  0    0
+  1     1     0  1  0  0  0  0  0  0    0
+  0     1     0  1  0  0  0  0  0  0    0
+  1     1     0  0  1  0  0  0  0  0    0
+  0     1     0  0  1  0  0  0  0  0    0
+  1     1     0  0  0  1  0  0  0  0    0
+  0     1     0  0  0  1  0  0  0  0    0
+  1     1     0  0  0  0  1  0  0  0    1
+  0     1     0  0  0  0  1  0  0  0    1
+  1     1     0  0  0  0  0  1  0  0    1
+  0     1     0  0  0  0  0  1  0  0    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     2     1  0  0  0  0  0  0  0    0
+  0     2     1  0  0  0  0  0  0  0    0
+  1     2     0  1  0  0  0  0  0  0    0
+  0     2     0  1  0  0  0  0  0  0    0
+  1     2     0  0  1  0  0  0  0  0    0
+  0     2     0  0  1  0  0  0  0  0    0
+  1     2     0  0  0  1  0  0  0  0    0
+  0     2     0  0  0  1  0  0  0  0    0
+  1     2     0  0  0  0  1  0  0  0    1
+  0     2     0  0  0  0  1  0  0  0    1
+  1     2     0  0  0  0  0  1  0  0    1
+  0     2     0  0  0  0  0  1  0  0    1
+  1     2     0  0  0  0  0  0  1  0    1
+  0     2     0  0  0  0  0  0  1  0    1
+  1     2     0  0  0  0  0  0  0  1    1
+  0     2     0  0  0  0  0  0  0  1    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     3     1  0  0  0  0  0  0  0    0
+  0     3     1  0  0  0  0  0  0  0    0
+  1     3     0  1  0  0  0  0  0  0    0
+  0     3     0  1  0  0  0  0  0  0    0
+  1     3     0  0  1  0  0  0  0  0    0
+  0     3     0  0  1  0  0  0  0  0    0
+  1     3     0  0  0  1  0  0  0  0    0
+  0     3     0  0  0  1  0  0  0  0    0
+  1     3     0  0  0  0  1  0  0  0    1
+  0     3     0  0  0  0  1  0  0  0    1
+  1     3     0  0  0  0  0  1  0  0    1
+  0     3     0  0  0  0  0  1  0  0    1
+  1     3     0  0  0  0  0  0  1  0    1
+  0     3     0  0  0  0  0  0  1  0    1
+  1     3     0  0  0  0  0  0  0  1    1
+  0     3     0  0  0  0  0  0  0  1    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     4     1  0  0  0  0  0  0  0    0
+  0     4     1  0  0  0  0  0  0  0    0
+  1     4     0  1  0  0  0  0  0  0    0
+  0     4     0  1  0  0  0  0  0  0    0
+  1     4     0  0  1  0  0  0  0  0    0
+  0     4     0  0  1  0  0  0  0  0    0
+  1     4     0  0  0  1  0  0  0  0    0
+  0     4     0  0  0  1  0  0  0  0    0
+  1     4     0  0  0  0  1  0  0  0    1
+  0     4     0  0  0  0  1  0  0  0    1
+  1     4     0  0  0  0  0  1  0  0    1
+  0     4     0  0  0  0  0  1  0  0    1
+  1     4     0  0  0  0  0  0  1  0    1
+  0     4     0  0  0  0  0  0  1  0    1
+  1     4     0  0  0  0  0  0  0  1    1
+  0     4     0  0  0  0  0  0  0  1    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     5     1  0  0  0  0  0  0  0    0
+  0     5     1  0  0  0  0  0  0  0    0
+  1     5     0  1  0  0  0  0  0  0    0
+  0     5     0  1  0  0  0  0  0  0    0
+  1     5     0  0  1  0  0  0  0  0    0
+  0     5     0  0  1  0  0  0  0  0    0
+  1     5     0  0  0  1  0  0  0  0    0
+  0     5     0  0  0  1  0  0  0  0    0
+  1     5     0  0  0  0  1  0  0  0    1
+  0     5     0  0  0  0  1  0  0  0    1
+  1     5     0  0  0  0  0  1  0  0    1
+  0     5     0  0  0  0  0  1  0  0    1
+  1     5     0  0  0  0  0  0  1  0    1
+  0     5     0  0  0  0  0  0  1  0    1
+  1     5     0  0  0  0  0  0  0  1    1
+  0     5     0  0  0  0  0  0  0  1    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     6     1  0  0  0  0  0  0  0    0
+  0     6     1  0  0  0  0  0  0  0    0
+  1     6     0  1  0  0  0  0  0  0    0
+  0     6     0  1  0  0  0  0  0  0    0
+  1     6     0  0  1  0  0  0  0  0    0
+  0     6     0  0  1  0  0  0  0  0    0
+  1     6     0  0  0  1  0  0  0  0    0
+  0     6     0  0  0  1  0  0  0  0    0
+  1     6     0  0  0  0  1  0  0  0    1
+  0     6     0  0  0  0  1  0  0  0    1
+#Clock Opcode T0 T1 T2 T3 T4 T5 T6 T7 Execute
+  1     7     1  0  0  0  0  0  0  0    0
+  0     7     1  0  0  0  0  0  0  0    0
+  1     7     0  1  0  0  0  0  0  0    0
+  0     7     0  1  0  0  0  0  0  0    0
+  1     7     0  0  1  0  0  0  0  0    0
+  0     7     0  0  1  0  0  0  0  0    0
+  1     7     0  0  0  1  0  0  0  0    0
+  0     7     0  0  0  1  0  0  0  0    0
+  1     7     0  0  0  0  1  0  0  0    1
+  0     7     0  0  0  0  1  0  0  0    1</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="420" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>InstructionSequencerFSM-Inner.dig</elementName>
+      <elementAttributes/>
+      <pos x="440" y="160"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="360" y="160"/>
+      <p2 x="440" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="160"/>
+      <p2 x="840" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="320"/>
+      <p2 x="840" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="320"/>
+      <p2 x="680" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="480"/>
+      <p2 x="840" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="260"/>
+      <p2 x="740" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="200"/>
+      <p2 x="400" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="200"/>
+      <p2 x="840" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="200"/>
+      <p2 x="800" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="360"/>
+      <p2 x="840" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="300"/>
+      <p2 x="700" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="240"/>
+      <p2 x="840" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="240"/>
+      <p2 x="760" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="400"/>
+      <p2 x="840" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="180"/>
+      <p2 x="440" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="180"/>
+      <p2 x="820" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="280"/>
+      <p2 x="840" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="280"/>
+      <p2 x="720" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="440"/>
+      <p2 x="840" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="220"/>
+      <p2 x="780" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="400" y="180"/>
+      <p2 x="400" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="200"/>
+      <p2 x="800" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="720" y="280"/>
+      <p2 x="720" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="820" y="180"/>
+      <p2 x="820" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="260"/>
+      <p2 x="740" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="240"/>
+      <p2 x="760" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="680" y="320"/>
+      <p2 x="680" y="480"/>
+    </wire>
+    <wire>
+      <p1 x="780" y="220"/>
+      <p2 x="780" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="700" y="300"/>
+      <p2 x="700" y="440"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
